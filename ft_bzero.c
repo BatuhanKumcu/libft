@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/05 17:28:18 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/07 14:42:02 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/07 15:16:10 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/07 15:24:01 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int		i;
-	size_t	a;
-
-	a = 0;
+	size_t	i;
+	unsigned char	*str;
+	
+	str = (unsigned char *)s;
 	i = 0;
-	while (s1[i] && s2[i] && a < n && s1[i] == s2[i])
+	while (i < n)
 	{
+		str[i] = '\0';
 		i++;
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		a++;
 	}
-	return (0);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	s[] = "selamlar";
+	int		i = 4;
+	ft_bzero(s,i);
+	printf("%s", s);
+	return 0;
 }

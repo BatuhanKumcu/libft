@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+         #
+#    By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/06 11:20:58 by bakumcu           #+#    #+#              #
-#    Updated: 2026/01/06 14:18:28 by bakumcu          ###   ########.fr        #
+#    Updated: 2026/01/07 15:17:27 by batuhankumc      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ fclean: clean
 re: fclean all
 
 banana:
-	@echo "maymun ceyda"
+	@echo "tm."
 
 TEST = TEST
 
