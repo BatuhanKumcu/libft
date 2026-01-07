@@ -6,7 +6,7 @@
 #    By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/06 11:20:58 by bakumcu           #+#    #+#              #
-#    Updated: 2026/01/06 12:40:19 by bakumcu          ###   ########.fr        #
+#    Updated: 2026/01/06 14:18:28 by bakumcu          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = ft_strlen.c ft_putchar.c ft_strncmp.c ft_strlcat.c ft_isalpha.c ft_isdigit.c
+
 
 OBJS = $(SRCS:.c=.o)
 
