@@ -1,36 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 14:52:59 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 10:26:56 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/08 12:14:42 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/08 12:16:31 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
+#include "libft.h"
+
+void	ft_putstr_ft(char *s, int fd)
 {
-	int	sign;
-	int	count;
 	int	i;
 
 	i = 0;
-	sign = 1;
-	count = 0;
-	while (str[i] >= 9 && str[i] <= 13 || str[i] == ' ')
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	while (s[i])
 	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
+		write(fd, &s[i], 1);
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		count = count * 10 + (str[i] - 48);
-		i++;
-	}
-	return (sign * count);
 }

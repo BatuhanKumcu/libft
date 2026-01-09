@@ -1,38 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 15:16:10 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/07 15:28:19 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/07 16:39:02 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/07 16:57:14 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	unsigned char	*str;
-	
-	str = (unsigned char *)s;
+	int	i;
+	int	a;
+
 	i = 0;
-	while (i < n)
+	a = 0;
+	if (needle[a] == '\0')
+		return ((char *)haystack);
+	while (haystack[i] && needle[a] && i < len)
 	{
-		str[i] = '\0';
+		while (haystack[i] == needle[a])
+		{
+			a++;
+			i++;
+			if (needle[a] == '\0')
+				return ((char *)needle);
+		}
 		i++;
 	}
+	return (0);
 }
 
 #include <stdio.h>
 
 int	main(void)
 {
-	char	s[] = "selamlar";
-	int		i = 4;
-	ft_bzero(s,i);
-	printf("%s", s);
-	return 0;
+	char	hays[] = "selamlar";
+	char	needle[] = "lam";
+	int		len = 6;
+	printf ("%s", ft_strnstr(hays,needle,len));
 }

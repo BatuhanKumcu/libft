@@ -1,36 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 14:52:59 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 10:26:56 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/08 16:48:17 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/08 16:55:47 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
-{
-	int	sign;
-	int	count;
-	int	i;
+#include "libft.h"
 
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	size_t	s1len;
+	size_t	s2len;
+	size_t	i;
+	size_t	sn;
+	char	*sum;
+
+	if (!s1 || !s2)
+		return (NULL);
 	i = 0;
-	sign = 1;
-	count = 0;
-	while (str[i] >= 9 && str[i] <= 13 || str[i] == ' ')
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	sn = 0;
+	s1len = ft_strlen(s1);
+	s2len = ft_strlen(s2);
+	sum = malloc(sizeof(char) * (s1len + s2len + 1));
+	if(!sum)
+		return (NULL);
+	while (s1[sn])
 	{
-		if (str[i] == '-')
-			sign *= -1;
+		sum[i] = s1[sn];
 		i++;
+		sn++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	sn = 0;
+	while (s2[sn])
 	{
-		count = count * 10 + (str[i] - 48);
+		sum[i] = s2[sn];
 		i++;
+		sn++;
 	}
-	return (sign * count);
+	sum[i] = '\0';
+	return (sum);
 }

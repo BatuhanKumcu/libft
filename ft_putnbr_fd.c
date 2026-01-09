@@ -1,36 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 14:52:59 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 10:26:56 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/08 12:16:56 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/08 12:25:25 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
+#include <unistd.h>
+void	ft_putchar(char c)
 {
-	int	sign;
-	int	count;
+	write (1, &c, 1);
+}
+
+void	ft_putnbr_fd(int n, int fd)
+{
 	int	i;
 
 	i = 0;
-	sign = 1;
-	count = 0;
-	while (str[i] >= 9 && str[i] <= 13 || str[i] == ' ')
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	if (n < 0)
 	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
+		ft_putchar('-');
+		n *= -1;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	if (n == 2147483647)
 	{
-		count = count * 10 + (str[i] - 48);
-		i++;
+		write(1, "2", 1);
+		n = 147483647;
 	}
-	return (sign * count);
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, 1);
+		ft_putnbr_fd(n % 10, 1);
+	}
+	else
+		ft_putchar(n + '0');
+}
+
+int	main(void)
+{
+	int	c = -42;
+	ft_putnbr_fd(42,1);
 }

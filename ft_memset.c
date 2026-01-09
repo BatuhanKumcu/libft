@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 14:52:59 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 10:26:56 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/01/07 17:01:08 by batuhankumc       #+#    #+#             */
+/*   Updated: 2026/01/08 10:44:55 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	int	sign;
-	int	count;
-	int	i;
+	unsigned char	*str;
+	size_t	i;
 
 	i = 0;
-	sign = 1;
-	count = 0;
-	while (str[i] >= 9 && str[i] <= 13 || str[i] == ' ')
-		i++;
-	while (str[i] == '+' || str[i] == '-')
+	str = (unsigned	char *)b;
+	while (i < len)
 	{
-		if (str[i] == '-')
-			sign *= -1;
+		str[i] = c;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		count = count * 10 + (str[i] - 48);
-		i++;
-	}
-	return (sign * count);
+	return (b);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+	unsigned char str[5] = "";
+	size_t len = 3;
+	int c = 'A';
+	printf("%p", ft_memset(str,c,len));
+	printf("\n%s", str);
 }
