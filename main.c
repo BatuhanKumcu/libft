@@ -1,42 +1,14 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 #include "libft.h"
-#include <ctype.h>
 
-int main(void)
+int	main(void)
 {
-    /* ft_strlen */
-    printf("ft_strlen(\"hello\") = %zu\n", ft_strlen("hello"));
-    printf("strlen(\"hello\")    = %zu\n\n", strlen("hello"));
 
-    /* ft_putchar */
-    printf("ft_putchar('A'): ");
-    ft_putchar('A');
-    printf("\n\n");
+	char	s[] = "selamlar    ceyda arkadaslar";
+	unsigned int start = 10;
+	size_t	len = 5;
+	printf("%s", ft_substr(s,start,len));
 
-    /* ft_strncmp */
-    printf("ft_strncmp(\"abc\", \"abd\", 3) = %d\n",
-           ft_strncmp("abc", "abd", 3));
-    printf("strncmp(\"abc\", \"abd\", 3)    = %d\n\n",
-           strncmp("abc", "abd", 3));
-
-    /* ft_strlcat */
-	{
-    char dst1[20] = "Hello ";
-    size_t r;
-
-    r = ft_strlcat(dst1, "World", sizeof(dst1));
-    printf("ft_strlcat return = %zu, dst = \"%s\"\n\n", r, dst1);
-	}
-
-
-    /* ft_isalpha */
-    printf("ft_isalpha('A') = %d\n", ft_isalpha('A'));
-    printf("isalpha('A')    = %d\n\n", isalpha('A'));
-
-    /* ft_isdigit */
-    printf("ft_isdigit('5') = %d\n", ft_isdigit('5'));
-    printf("isdigit('5')    = %d\n", isdigit('5'));
-
-    return (0);
+	return (0);
 }

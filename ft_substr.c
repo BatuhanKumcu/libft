@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 16:14:48 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 16:23:46 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/10 03:20:42 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,42 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	n;
-	size_t	slen;
 	size_t	i;
 	char	*str;
-	
+
+	if (!s)
+		return (NULL);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
+	str = malloc((len + 1) * (sizeof(char)));
+	if (!str)
+		return (NULL);
 	i = 0;
-	n = 0;
-	slen = ft_strlen(s);
-	str = malloc(sizeof (char) * (slen + 1));
-	while (s[n] && n < len)
+	while (i < len)
 	{
-		while (s[n] == start)
-		{
-			str[i] = s[n];
-			n++;
-		}
-		n++;
+		str[i] = s[start + i];
+		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	s[] = "selamlar  ceyda arkadaslar";
+	unsigned int start = 9;
+	size_t	len = 5;
+	printf("%s", ft_substr(s,start,len));
+	printf("%s", ft_substr(s,start,len));
+}
+*/
+
+//selamlar ceyda arkadaslar
+
+// index + start = start of sub string
+// merhaba dunya\0

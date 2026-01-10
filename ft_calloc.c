@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:31:44 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 16:00:43 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/10 00:02:54 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

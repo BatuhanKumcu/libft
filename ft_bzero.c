@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 15:16:10 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/07 15:28:19 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/10 00:09:03 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -36,3 +36,4 @@ int	main(void)
 	printf("%s", s);
 	return 0;
 }
+*/

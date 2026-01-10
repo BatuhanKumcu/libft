@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+         #
+#    By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/06 11:20:58 by bakumcu           #+#    #+#              #
-#    Updated: 2026/01/07 15:17:27 by batuhankumc      ###   ########.fr        #
+#    Updated: 2026/01/10 00:00:05 by bakumcu          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_strlen.c ft_putchar.c ft_strncmp.c ft_strlcat.c ft_isalpha.c ft_isdigit.c
+SRCS = ft_strlen.c ft_putchar.c ft_bzero.c ft_calloc.c ft_strncmp.c ft_strlcat.c ft_isalpha.c ft_isdigit.c ft_substr.c ft_strdup.c
 
 
 OBJS = $(SRCS:.c=.o)
