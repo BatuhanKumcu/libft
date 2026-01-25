@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 16:39:02 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/07 16:57:14 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/23 14:53:38 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (0);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	hays[] = "selamlar";
-	char	needle[] = "lam";
-	int		len = 6;
-	printf ("%s", ft_strnstr(hays,needle,len));
 }

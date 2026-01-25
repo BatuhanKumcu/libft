@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 22:27:24 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/09 23:24:57 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:49:04 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,14 +61,11 @@ static	void	ft_free_split(char **strs, int j)
 	int	a;
 
 	a = 0;
-	if (!strs)
-		return (0);
 	while (a < j)
 	{
 		free(strs[a]);
 		a++;
 	}
-	free(strs);
 }
 
 static	char	**ft_put_words(char const *s, char c, int word_count)

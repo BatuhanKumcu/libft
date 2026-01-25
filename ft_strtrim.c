@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 19:22:52 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/09 21:36:49 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/01/23 14:27:33 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,11 +66,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (fnl);
 }
 
-#include <stdio.h>
-
-int	main(void)
-{
-	char const s1[] = "xxaxax";
-	char const set[] = "x";
-	printf("%s", ft_strtrim(s1,set));
-}

@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 10:45:28 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 10:58:46 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/23 14:28:13 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-#include <stdio.h>
-
-int main(void)
-{
-	unsigned char src[] = "selamlar";
-	unsigned char dest[10] = "merh";
-	size_t			n = 8;
-
-	printf("%p", ft_memcpy(dest,src,n));
-	printf("\n%s", dest);
-}
-

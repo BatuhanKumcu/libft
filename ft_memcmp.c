@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 11:40:42 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 11:50:36 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/23 14:41:11 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char *str1;
 	unsigned char *str2;
-	int			i;
+	size_t			i;
 
 	i = 0;
 	str1 = (unsigned char *)s1;
@@ -28,14 +28,4 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	}
 	return (0);
-}
-
-#include <stdio.h>
-
-int main (void)
-{
-	size_t	n = 8;
-	unsigned char s1[] = "selamlar";
-	unsigned char s2[] = "selamlar";
-	printf("%d", ft_memcmp(s1,s2,n));
 }

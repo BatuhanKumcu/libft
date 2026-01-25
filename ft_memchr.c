@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 11:06:51 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 11:28:09 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/23 14:28:17 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (0);
-}
-
-#include <stdio.h>
-
-int main(void)
-{
-	size_t n = 10;
-	int		c = 'a';
-	unsigned char str[] = "bilgisayar";
-	printf("%p", ft_memchr(str,c,n));
-	printf("\n%s", str);
 }
