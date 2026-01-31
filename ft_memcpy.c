@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 10:45:28 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 15:44:31 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:15:23 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*str_dest;
 	unsigned char	*str_src;
 

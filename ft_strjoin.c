@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 16:48:17 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/27 11:51:27 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 16:01:48 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		sum[i++] = s2[n++];
 	sum[i] = '\0';
 	return (sum);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char const	s1[] = "selam";
-	char const	s2[] = " merhaba";
-	printf("%s", ft_strjoin(s1,s2));
 }

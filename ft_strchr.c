@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 12:46:10 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/27 15:41:59 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:14:29 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
-

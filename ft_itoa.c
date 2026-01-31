@@ -6,24 +6,11 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 14:23:38 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/26 15:03:06 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:27:49 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_itoa(int n)
-{
-	int		numlen;
-	char	*str;
-	
-	numlen = ft_numlen(n);
-	str = (char *)malloc(sizeof(char) * (numlen + 1));
-	if (!str)
-		return (NULL);
-	str[numlen] = '\0';
-	return (str);
-}
 
 static	int	ft_numlen(int n)
 {
@@ -40,6 +27,30 @@ static	int	ft_numlen(int n)
 	return (len);
 }
 
-// verilen integerı cevirerek stringe dönüştürüceksin
-// ama verilen sayı tersten stringe dönüştürülmeli bu yüzden malloc ile
-// sayının analı alınmalı
+char	*ft_itoa(int n)
+{
+	char	*final;
+	int		digitnmbr;
+	long	nlong;
+
+	nlong = (long)n;
+	digitnmbr = ft_numlen(nlong);
+	final = malloc(sizeof(char) * (digitnmbr + 1));
+	if (!final)
+		return (NULL);
+	final[digitnmbr] = '\0';
+	if (nlong < 0)
+	{
+		final[0] = '-';
+		nlong = -nlong;
+	}
+	digitnmbr--;
+	while (nlong > 9)
+	{
+		final[digitnmbr] = (nlong % 10) + '0';
+		nlong = nlong / 10;
+		digitnmbr--;
+	}
+	final[digitnmbr] = nlong + '0';
+	return (final);
+}

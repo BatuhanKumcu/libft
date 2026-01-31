@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 11:06:51 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/23 14:28:17 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:18:18 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	unsigned char *str;
+	size_t			i;
+	unsigned char	*str;
 
 	str = (unsigned char *)s;
 	i = 0;

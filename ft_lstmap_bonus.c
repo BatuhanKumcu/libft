@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/25 15:03:08 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/25 15:08:59 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 18:31:15 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,25 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*lst_new;
-	t_list	*obj_new;
-	
-	if (!lst || !f || !del)
+	t_list	*newlist;
+	t_list	*newnode;
+	void	*new_content;
+
+	if (lst == NULL || f == NULL || del == NULL)
 		return (NULL);
-	lst_new = NULL;
+	newlist = NULL;
 	while (lst)
 	{
-		obj_new = ft_lstnew(f(lst->content));
-		if (!obj_new)
+		new_content = f(lst->content);
+		newnode = ft_lstnew(new_content);
+		if (!newnode)
 		{
-			ft_lstclear(&lst_new, del);
+			del(new_content);
+			ft_lstclear(&newlist, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&lst_new, obj_new);
+		ft_lstadd_back(&newlist, newnode);
 		lst = lst->next;
 	}
-	return (lst_new);
+	return (newlist);
 }

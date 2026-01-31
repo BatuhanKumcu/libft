@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 12:02:54 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/10 03:25:21 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/01/30 17:22:35 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(const char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char	*res;
+	char			*res;
 	unsigned int	i;
 
 	if (!s || !f)

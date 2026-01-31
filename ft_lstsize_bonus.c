@@ -6,7 +6,7 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 16:50:14 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/23 16:52:00 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:17:01 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	if (!lst)
-		return 0;
+		return (0);
 	i = 0;
 	while (lst)
 	{

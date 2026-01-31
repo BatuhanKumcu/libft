@@ -6,22 +6,11 @@
 /*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 19:22:52 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/23 14:27:33 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/01/30 17:42:21 by batuhankumc      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
 
 static int	ft_set_true(char b, char const *set)
 {
@@ -65,4 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	fnl[i] = '\0';
 	return (fnl);
 }
-
