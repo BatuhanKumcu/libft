@@ -6,7 +6,7 @@
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 22:27:24 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/02/01 12:10:34 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/02/01 12:14:33 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,21 +114,3 @@ char	**ft_split(char const *s, char c)
 	return (strs);
 }
 
-#include <stdio.h>
-
-int	main(void)
-{
-	char    **result;
-    int     i;
-
-    result = ft_split("  selam   42   istanbul  ", ' ');
-
-    i = 0;
-    while (result[i] != NULL)
-    {
-        printf("Index %d: |%s|\n", i, result[i]);
-        i++;
-    }
-
-    return (0);
-}
