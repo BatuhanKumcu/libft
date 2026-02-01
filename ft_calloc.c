@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/08 15:31:44 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/10 00:02:54 by bakumcu          ###   ########.fr       */
+/*   Created: 2026/02/01 11:12:46 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:29:06 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (size != 0 && count > SIZE_MAX / size)
-		return (NULL);
 	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);

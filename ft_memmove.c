@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/27 13:06:30 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 18:03:07 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:14:28 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:14:29 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

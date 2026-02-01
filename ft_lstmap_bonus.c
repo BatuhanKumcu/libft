@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 15:03:08 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 18:31:15 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:13:56 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:13:58 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

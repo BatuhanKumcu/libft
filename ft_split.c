@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 22:27:24 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/23 14:49:04 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/02/01 11:15:15 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

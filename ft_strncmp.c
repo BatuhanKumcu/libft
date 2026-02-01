@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 17:28:18 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/30 17:21:49 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/02/01 11:16:15 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

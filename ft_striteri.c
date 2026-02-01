@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 03:36:16 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/01/26 16:49:48 by batuhankumc      ###   ########.fr       */
+/*   Updated: 2026/02/01 11:15:50 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

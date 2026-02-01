@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/08 12:12:58 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/08 12:25:20 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:14:42 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:14:43 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

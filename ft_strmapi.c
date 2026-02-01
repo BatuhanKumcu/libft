@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/08 12:02:54 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 17:22:35 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:17:17 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:17:18 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

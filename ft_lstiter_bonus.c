@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/25 14:55:01 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 17:34:27 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:13:47 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:13:49 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

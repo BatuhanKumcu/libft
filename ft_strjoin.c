@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/08 16:48:17 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/30 16:01:48 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:15:55 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:15:56 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

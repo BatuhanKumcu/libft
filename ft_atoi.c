@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhankumcu <batuhankumcu@student.42.f    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/07 14:52:59 by batuhankumc       #+#    #+#             */
-/*   Updated: 2026/01/29 13:30:40 by batuhankumc      ###   ########.fr       */
+/*   Created: 2026/02/01 11:12:28 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/01 11:12:30 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
