@@ -6,13 +6,13 @@
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 22:27:24 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/02/01 11:15:15 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/02/01 12:10:34 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_word_count(char const *s, char c)
+static	size_t	ft_word_count(char const *s, char c)
 {
 	size_t	i;
 	size_t	word;
@@ -49,8 +49,8 @@ static	char	*ft_alloc_word(char const *s, char c, int *i)
 	while (j < len)
 	{
 		word[j] = s[*i];
-		word++;
-		i++;
+		j++;
+		(*i)++;
 	}
 	word[j] = '\0';
 	return (word);
@@ -66,6 +66,7 @@ static	void	ft_free_split(char **strs, int j)
 		free(strs[a]);
 		a++;
 	}
+	free(strs);
 }
 
 static	char	**ft_put_words(char const *s, char c, int word_count)
@@ -87,9 +88,9 @@ static	char	**ft_put_words(char const *s, char c, int word_count)
 		{
 			strs[j] = ft_alloc_word(s, c, &i);
 			if (!strs[j])
-				return (ft_free_split(strs, j - 1), NULL);
+				return (ft_free_split(strs, j), NULL);
 			j++;
-		}		
+		}	
 		else
 			i++;
 	}
@@ -101,14 +102,33 @@ char	**ft_split(char const *s, char c)
 {
 	char	**strs;
 	int		word_len;
-	
+
 	if (!s)
 		return (NULL);
 	word_len = ft_word_count(s, c);
-	if (word_len == 0)
-		return (NULL);
+	//if (word_len == 0)
+	//	return (NULL);
 	strs = ft_put_words(s, c, word_len);
 	if (!strs)
 		return (NULL);
 	return (strs);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char    **result;
+    int     i;
+
+    result = ft_split("  selam   42   istanbul  ", ' ');
+
+    i = 0;
+    while (result[i] != NULL)
+    {
+        printf("Index %d: |%s|\n", i, result[i]);
+        i++;
+    }
+
+    return (0);
 }

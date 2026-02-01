@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft - y.h                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/07 10:31:40 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/02/01 11:17:49 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/02/01 11:55:18 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
-#include <unistd.h>
 #include <stddef.h>
-#include <stdint.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 typedef struct s_list
 {
