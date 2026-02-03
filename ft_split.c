@@ -6,7 +6,7 @@
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 22:27:24 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/02/01 12:14:33 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/02/01 13:26:04 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ static	char	**ft_put_words(char const *s, char c, int word_count)
 			if (!strs[j])
 				return (ft_free_split(strs, j), NULL);
 			j++;
-		}	
+		}
 		else
 			i++;
 	}
@@ -106,11 +106,8 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_len = ft_word_count(s, c);
-	//if (word_len == 0)
-	//	return (NULL);
 	strs = ft_put_words(s, c, word_len);
 	if (!strs)
 		return (NULL);
 	return (strs);
 }
-

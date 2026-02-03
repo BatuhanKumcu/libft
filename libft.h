@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oduztas <oduztas@student.42istanbul.com    +#+  +:+       +#+        */
+/*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/29 19:39:28 by ceydac            #+#    #+#             */
-/*   Updated: 2026/01/30 17:12:24 by oduztas          ###   ########.fr       */
+/*   Created: 2026/02/01 13:32:39 by bakumcu           #+#    #+#             */
+/*   Updated: 2026/02/03 11:41:01 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H // if not defined (security check)
-# define LIBFT_H // then define, therefore the use of " "
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -68,4 +69,4 @@ char				**ft_split(char const *s, char c);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
-#endif // end definition, an open definition must be closed
+#endif

@@ -6,7 +6,7 @@
 /*   By: bakumcu <bakumcu@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 11:14:28 by bakumcu           #+#    #+#             */
-/*   Updated: 2026/02/01 11:14:29 by bakumcu          ###   ########.fr       */
+/*   Updated: 2026/02/01 13:26:32 by bakumcu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	else
-	{ 
+	{
 		while (len-- > 0)
 			dst_str[len] = src_str[len];
 	}
